@@ -1,0 +1,11 @@
+name: intercom_flutter_web
+version: 0.0.2
+description: Wrapper of Intercom SPA SDK for Flutter Web
+repository: https://github.com/noliran/intercom-flutter-web
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  js: ^0.6.2
+  meta: ^1.2.4
