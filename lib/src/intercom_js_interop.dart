@@ -12,6 +12,6 @@ class Intercom {
   static void shutdown() => context.callMethod("Intercom", ['shutdown']);
   static void update(Map<String, dynamic> updateData) => context.callMethod("Intercom", ["update", JsObject.jsify(updateData)]);
   static void trackEvent(String eventId,
-          {Map<String, dynamic> eventData = null}) =>
-      context.callMethod("Intercom", ['trackEvent', eventId, JsObject.jsify(eventData)]);
+          {Map<String, dynamic> eventData}) =>
+      context.callMethod("Intercom", ['trackEvent', eventId, JsObject.jsify(eventData ?? {})]);
 }
